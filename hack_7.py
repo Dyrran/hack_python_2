@@ -14,11 +14,13 @@ def fn_hack_7(s):
     _lst = []
 
     if len(result) > 1:
-        for index in range(len(result)):
+        index = 0
+        while index < len(result):
             if (index+1) % 2 != 0:
                 _lst.append(str(index+1))
             else:
                 _lst.append(index+1)
+            index += 1
     else:
         _lst = result
 
